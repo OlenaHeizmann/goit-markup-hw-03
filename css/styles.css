@@ -43,26 +43,21 @@ body {
   max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: 145px;
-  margin-right: 145px;
-}
-
-.page-header {
-  border-bottom: 1px solid #e7e9fc;
+  margin-left: 141px;
+  margin-right: 141px;
 }
 
 .header-container {
   display: flex;
-  justify-content: space-around;
-  margin: 24px;
-  margin-bottom: 24px;
-  width: 1158px;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7e9fc;
+  height: 72px;
 }
 
 .navigation {
   display: flex;
-  justify-content: space-between;
+  justify-items: space-between;
 }
 
 .page-navigation {
@@ -72,8 +67,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   justify-items: space-between;
   width: 261px;
   height: 24px;
@@ -111,7 +105,7 @@ header span {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  display: inline-flex;
+  display: flex;
   justify-items: space-between;
   gap: 40px;
   font-family: "Roboto", sans-serif;
@@ -130,8 +124,9 @@ header span {
 }
 /** main */
 .hero {
-  padding: 188px 0;
+  padding: 0;
 }
+
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -140,7 +135,7 @@ header span {
   background-color: #2e2f42;
   height: 600px;
   justify-content: center;
-  /* width: 1140px; */
+  margin: 0;
 }
 
 .main-titel {
@@ -186,24 +181,38 @@ header span {
   color: #2e2f42;
 }
 
-.titel-features {
-  display: none;
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 }
 
-.feauters-container {
-  height: 104px;
-  margin: 120 0 120 0;
-}
-
-.features-list {
+.main-feauters-list {
   display: flex;
-  justify-content: center;
+  padding: 120px 0 120px 0;
+  gap: 24px;
 }
 
 .features-list-item {
-  width: 264px;
+  width: calc((100% - 72px) / 4);
 }
 
+.section-title {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
 .title {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -232,8 +241,14 @@ header span {
 
 .teammember {
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  width: calc((100% - 72px) / 4);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+  margin-bottom: 120px;
 }
-.team p {
+.member-funktion {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -244,6 +259,28 @@ header span {
 
 .member-funktion {
   font-size: 16px;
+}
+
+.card-member-funktion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 32px 0;
+}
+
+.portfolio {
+  padding-bottom: 120px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  column-gap: 24px;
+}
+
+.portfolio-list-item {
+  width: calc((100% - 48px) / 3);
 }
 
 .supply {
