@@ -51,8 +51,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #e7e9fc;
+
   height: 72px;
+}
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .navigation {
@@ -172,7 +176,11 @@ header span {
   background-color: #404bbf;
 }
 
-.feauters-container {
+/* .feauters-container {
+  padding: 120px 0;
+} */
+
+.features {
   padding: 120px 0;
 }
 
