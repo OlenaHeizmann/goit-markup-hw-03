@@ -257,7 +257,6 @@ header span {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
   margin-bottom: 120px;
-
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -290,7 +289,6 @@ header span {
   display: flex;
   flex-wrap: wrap;
   row-gap: 48px;
-  gap: 24px;
   column-gap: 24px;
 }
 
