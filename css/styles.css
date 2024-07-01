@@ -245,8 +245,12 @@ header span {
   padding: 120px 0;
 }
 
-.team-sektion-titel {
+.team-title {
   margin-bottom: 72px;
+}
+
+.team-list-title {
+  text-align: center;
 }
 
 .teammember {
