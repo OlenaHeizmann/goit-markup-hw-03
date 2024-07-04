@@ -36,22 +36,20 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #fff;
   color: #434455;
-  width: 1440px;
 }
 
 .container {
-  max-width: 100%;
+  max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: 141px;
-  margin-right: 141px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
 }
 
 .page-header {
@@ -72,9 +70,6 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   display: flex;
-  justify-items: space-between;
-  width: 261px;
-  height: 24px;
   gap: 40px;
 }
 
@@ -85,6 +80,7 @@ body {
 }
 
 .navitem {
+  display: block;
   color: #2e2f42;
   padding: 24px 0;
 }
@@ -129,6 +125,7 @@ header span {
 /** main */
 .hero {
   padding: 188px 0;
+  background-color: #2e2f42;
 }
 
 .hero-container {
@@ -136,11 +133,6 @@ header span {
   flex-direction: column;
   align-items: center;
   gap: 48px;
-  background-color: #2e2f42;
-  height: 600px;
-  justify-content: center;
-  margin: 0;
-  padding: 188px 0;
 }
 
 .main-titel {
@@ -260,7 +252,6 @@ header span {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
-  margin-bottom: 120px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -272,10 +263,6 @@ header span {
   text-align: center;
 }
 .card-member-funktion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
   padding: 32px 0;
 }
 
@@ -345,4 +332,5 @@ header span {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   text-transform: none;
+  max-width: 264px;
 }
